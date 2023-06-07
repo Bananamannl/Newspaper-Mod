@@ -34,7 +34,7 @@ newspaper_toggle.1 = {
 		custom_tooltip = newspaper_toggle_tt
 		set_variable = {
             name = newspaper_events_bool
-            value = no
+            value = yes
         }
 	}
 	option = { # turning off the newspaper
@@ -45,7 +45,7 @@ newspaper_toggle.1 = {
 		custom_tooltip = newspaper_toggle_tt
 		set_variable = {
             name = newspaper_events_bool
-            value = yes
+            value = no
         }
 	}
 }
