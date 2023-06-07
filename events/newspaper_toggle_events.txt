@@ -1,12 +1,12 @@
-﻿namespace = newspaper_togle
+﻿namespace = newspaper_toggle
 
-# Newspaper Togle event
-newspaper_togle.1 = {
+# Newspaper toggle event
+newspaper_toggle.1 = {
 	type = country_event
 
-	title = newspaper_togle.1.t
-	desc = newspaper_togle.1.d
-	flavor = newspaper_togle.1.f
+	title = newspaper_toggle.1.t
+	desc = newspaper_toggle.1.d
+	flavor = newspaper_toggle.1.f
 
 	event_image = {
 		video = "unspecific_ruler_speaking_to_people"
@@ -19,30 +19,30 @@ newspaper_togle.1 = {
 	duration = 1
 
 	trigger = {
-		# triggered by newspaper togle decision
+		# triggered by newspaper toggle decision
 	}
 
 	immediate = {
 	}
 
 	option = { # turning on the newspaper
-		name = newspaper_togle.1.a
+		name = newspaper_toggle.1.a
 		trigger = {
 			has_variable = newspaper_events_bool
 		}
 		default_option = yes
-		custom_tooltip = newspaper_togle_tt
+		custom_tooltip = newspaper_toggle_tt
 		set_variable = {
             name = newspaper_events_bool
             value = no
         }
 	}
 	option = { # turning off the newspaper
-		name = newspaper_togle.1.b
+		name = newspaper_toggle.1.b
 		trigger = {
 			has_variable = newspaper_events_bool
 		}
-		custom_tooltip = newspaper_togle_tt
+		custom_tooltip = newspaper_toggle_tt
 		set_variable = {
             name = newspaper_events_bool
             value = yes

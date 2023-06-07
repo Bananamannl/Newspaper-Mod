@@ -11,7 +11,7 @@ newspaper_trigger_decision = {
             name = newspaper_events_bool
         }
         trigger_event = {
-            id = newspaper_togle.1
+            id = newspaper_toggle.1
             days = 0
             popup = yes
         }
