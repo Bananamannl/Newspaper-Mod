@@ -1,0 +1,4 @@
+﻿l_english:
+ newspaper_trigger_decision:0 "Toggle the newspaper on and off"
+ newspaper_trigger_decision_desc:0 "Wit this decision you can togle the newspaper on and off"
+ newspaper_trigger_decision_tooltip:0 "You like the news? Turn it on!"
