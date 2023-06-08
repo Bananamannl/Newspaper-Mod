@@ -1,0 +1,6 @@
+has_superevents_activated = {
+	AND = {
+		is_player = yes
+		var:newspaper_events_bool = yes
+	}
+}
