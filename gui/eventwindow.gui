@@ -520,14 +520,14 @@ types event_window_types {
 							minimumsize = { 730 -1 }
 							maximumsize = { 730 -1 }
 							parentanchor = top|hcenter
-							align = top|center
+							align = top|hcenter
 							raw_text = "#lore [EventWindow.GetDescription]#!"
 							margin = { 30 10 }
 						}
 
 						flowcontainer = {
 							direction = vertical
-							using = bottom_list_position
+							using = default_list_position
 							datamodel = "[EventWindow.GetOptions]"
 							spacing = 5
 							align = hcenter|bottom
