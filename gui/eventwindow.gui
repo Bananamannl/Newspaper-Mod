@@ -341,11 +341,17 @@ types event_window_types {
 		datacontext = "[EventWindow.GetEvent]"
 
 		alpha = 0
-
-		blockoverride "minimize" {}
-		blockoverride "header_close_button_visibility" {
-			visible = no
+		blockoverride "minimize" {
+			minimize_button_large = {
+				onclick = "[PopupManager.HideOpenEvent(Event.Self)]"
+				parentanchor = center
+				shortcut = "close_window"
+			}
 		}
+		blockoverride "header_close_button_visibility" {
+			visible = yes
+		}
+
 
 		blockoverride "window_header_name" {
 			raw_text = "#BOLD [EventWindow.GetTitle]#!"
