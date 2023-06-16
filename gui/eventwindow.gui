@@ -521,7 +521,7 @@
 							maximumsize = { 730 -1 }
 							parentanchor = top|hcenter
 							align = top|hcenter
-							raw_text = "#lore [EventWindow.GetDescription]#!"
+							raw_text = "#lore [EventWindow.GetFlavor]#!"
 							margin = { 30 10 }
 						}
 
