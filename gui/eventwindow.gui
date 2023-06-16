@@ -530,7 +530,6 @@ types event_window_types {
 							using = default_list_position
 							datamodel = "[EventWindow.GetOptions]"
 							spacing = 5
-							align = hcenter|bottom
 							margin = {20 30}
 
 							item = {
