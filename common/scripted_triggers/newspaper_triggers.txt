@@ -1,0 +1,13 @@
+has_superevents_activated = {
+	AND = {
+		is_player = yes
+		ROOT = {
+			OR = {
+				NOT = {
+					has_variable = newspaper_events_bool
+				}
+				var:newspaper_events_bool = yes
+			}
+		}
+	}
+}
