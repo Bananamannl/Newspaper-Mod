@@ -337,7 +337,7 @@
 		}
 	}
 
-	type newspaper_superevent_window = default_popup_two_lines {
+	type newspaper_superevent_window = default_popup {
 		datacontext = "[EventWindow.GetEvent]"
 
 		alpha = 0
@@ -351,16 +351,34 @@
 		blockoverride "header_close_button_visibility" {
 			visible = yes
 		}
+		blockoverride "header" {
+			widget = {
+				size = { 100% 82 }
+			
+				popup_top_header = {}
 
-
+				textbox = {
+					block "first_line_position" {
+						position = { 0 24 }
+					}
+					size = { 75% 40 }
+					block "window_header_name" {
+						text = ""
+					}
+					elide = right
+					fontsize_min = 14
+					parentanchor = hcenter
+					align = center|nobaseline
+					using = header_font
+					using = (fontsize = 32)
+					default_format = "#header"
+				}
+			}
+		}
 		blockoverride "window_header_name" {
 			raw_text = "#BOLD [EventWindow.GetTitle]#!"
 		}
 		blockoverride "content" {}
-
-		blockoverride "second_text" {
-			text = "EVENT_WINDOW_EVENT_LOCATION"
-		}
 
 		blockoverride "goto_visibility" {
 			visible = yes
